@@ -60,7 +60,64 @@ a {
 }
 
 /* -------------------------- HEADER START ---------------------------- */
+header {
+    padding-top: 55px;
+    padding-bottom: 50px;
+}
 
+.header__content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header__nav {
+    width: 100%;
+    max-width: 518px;
+}
+
+.header__list {
+    display: flex;
+    justify-content: space-between;
+}
+
+.header__item-link {
+    font-weight: var(--font-weight-medium);
+    font-size: var(--font-size-m);
+    color: var(--custom-dark);
+}
+
+.header__btn {
+    padding: 17px 57px;
+    border: 2px solid var(--custom-dark);
+    border-radius: var(--border-radius-s);
+    color: var(--dark-color);
+    font-size: var(--font-size-l);
+}
+
+#navCheckbox {
+    position: absolute;
+    left: -9999px;
+}
+
+/* Style for the checkbox image */
+.checkbox-container {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.checkbox-container img {
+    display: none;
+    width: 30px;  
+    height: auto;
+    transition: 0.3s;
+}
+
+#navCheckbox:focus + label img {
+    outline: 2px dashed orange;
+    outline-offset: 4px;
+}
 /* -------------------------- HEADER END ----------------------------- */
 
 
@@ -71,16 +128,72 @@ a {
 }
 
 @media only screen and (max-width: 992px){
+    :root {
+        /* FONT SIZE */
+       --font-size-n: 0.87rem; /* 16px -> 14px */
+       --font-size-m: 1rem; /* 20px -> 16px */
+       --font-size-l: 1.25rem; /*  24px -> 20px */
+       --font-size-xl: 1.3rem; /* 30px -> 22px */
+       --font-size-xxl: 1.5rem; /* 36px -> 24px  */
+       --font-size-xxxl: 2.25rem; /* 48px -> 36px */
+       --font-size-xxxxl: 3rem; /* 64px -> 48px */
+    }
 
+    .header__nav {
+        max-width: 418px;
+    }
+
+    .header__btn {
+        padding: 12px 40px;
+    }
+
+    .logo-img {
+        width: 89px;
+    }
 
 }
 
 @media only screen and (max-width: 768px){
+    :root {
+        /* FONT SIZE */
+       --font-size-n: 0.81rem; /* 16px -> 14px -> 13px */
+       --font-size-m: 0.87rem; /* 20px -> 16px -> 14px*/
+       --font-size-l: 1rem; /*  24px -> 20px -> 16px*/
+       --font-size-xl: 1.25rem; /* 30px -> 22px -> 20px */
+       --font-size-xxl: 1.12rem; /* 36px -> 24px -> 18px */
+       --font-size-xxxl: 1.87rem; /* 48px -> 36px -> 30px */
+       --font-size-xxxxl: 2.25rem; /* 64px -> 48px -> 36px */
+    }
+
+    .checkbox-container img {
+        display: block;
+    }
+
+    .header__btn {
+        display: none;
+    }
+    
+    .header__nav {
+        display: none;
+    }
 
 
 }
 
 @media only screen and (max-width: 576px){
+    :root {
+        /* FONT SIZE */
+       --font-size-n: 0.75rem; /* 16px -> 14px -> 13px -> 12px */
+       --font-size-m: 0.87rem; /* 20px -> 16px -> 14px*/
+       --font-size-l: 0.87rem; /*  24px -> 20px -> 16px -> 14px*/
+       --font-size-xl: 1.12rem; /* 30px -> 22px -> 20px -> 18px */
+       --font-size-xxl: 1.12rem; /* 36px -> 24px -> 18px */
+       --font-size-xxxl: 1.87rem; /* 48px -> 36px -> 30px */
+       --font-size-xxxxl: 2.12rem; /* 64px -> 48px -> 36px -> 34px*/
+    }
     
+    #checkboxImage {
+        width: 42px;
+    }
 }
 /* ------------------------ MEDIA QUERIES END ---------------------- */
