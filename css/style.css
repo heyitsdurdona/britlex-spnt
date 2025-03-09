@@ -1,0 +1,86 @@
+:root {
+       /* COLORS */
+       --white-color: #fff;
+       --dark-color: #000000;
+       --custom-dark: #263238;
+       --gray-color: #8F95A5;
+       
+       /* FONT SIZE */
+       --font-size-n: 1rem; /* 16px */
+       --font-size-m: 1.25rem; /* 20px */
+       --font-size-l: 1.5rem; /*  24px */
+       --font-size-xl: 1.8rem; /* 30px */
+       --font-size-xxl: 2.25rem; /* 36px  */
+       --font-size-xxxl: 3rem; /* 48px */
+       --font-size-xxxxl: 4rem; /* 64px */
+       
+       /* FONT WEIGHT */
+       --font-weight-normal: 400;
+       --font-weight-medium: 500;
+       --font-weight-semibold: 600;
+       
+       /* BORDER RADIUS */
+       --border-radius-s:  5px;
+       --border-radius-m: 10px;
+       --border-radius-l: 15px;
+   
+       /* SITE MAX WIDTH */
+       --site-max-width: 1340px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+    height: 100%;
+}
+
+body {
+    font-weight: var(--font-weight-normal);
+    width: 100%;
+}
+
+.container {
+    margin: 0 auto;
+    padding: 0 15px;
+    max-width: 1370px;
+}
+
+ol, ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+/* -------------------------- HEADER START ---------------------------- */
+
+/* -------------------------- HEADER END ----------------------------- */
+
+
+/* ------------------------ MEDIA QUERIES START -------------------- */
+@media only screen and (max-width: 1242px){
+
+    
+}
+
+@media only screen and (max-width: 992px){
+
+
+}
+
+@media only screen and (max-width: 768px){
+
+
+}
+
+@media only screen and (max-width: 576px){
+    
+}
+/* ------------------------ MEDIA QUERIES END ---------------------- */
