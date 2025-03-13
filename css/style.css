@@ -346,6 +346,65 @@ height: auto;
 } */
 
 /* -------------------------- PRICING END -------------------------- */
+
+/* --------------------------- CONTACT US START --------------------- */
+.contact-us {
+    padding-bottom: 133px;
+}
+
+.contact-us__content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 111px;
+}
+
+.contact-us__title {
+    font-weight: var(--font-weight-semibold);
+    font-size: var(--font-size-xxl);
+    line-height: 80px;
+    color: var(--dark-color);
+}
+
+.contact-us__info {
+    font-size: var(--font-size-m);
+    color: var(--gray-color);
+    margin-bottom: 52px;
+}
+
+.contact-us__btn-wrapper {
+    display: flex;
+    gap: 12px;    
+}
+
+.contact-us__input {
+    width: 100%;
+    max-width: 450px;
+    min-width: 283px;
+    padding-top: 26px;
+    padding-bottom: 30px;
+    padding-left: 33px;
+    border: 1px solid var(--dark-color);
+    outline: none;
+    border-radius: var(--border-radius-m);
+}
+
+.contact-us__btn {
+    width: 100%;
+    max-width: 264px;
+    padding-top: 26px;
+    padding-bottom: 30px;
+    text-align: center;
+    border: 1px solid var(--dark-color);
+    background-color: var(--dark-color);
+    color: var(--white-color);
+    outline: none;
+    border-radius: var(--border-radius-m);
+}
+
+
+/* ---------------------------- CONTACT US END ---------------------- */
+
 /* ============================= MAIN END =========================== */
 
 /* ------------------------ MEDIA QUERIES START -------------------- */
@@ -457,7 +516,17 @@ height: auto;
     .pricing__card-title {
         line-height: 34px;
     }
-    
+    /* contact-us responsivce */
+    .contact-us__input {
+        padding: 5px;
+    }
+    .contact-us__content {
+        gap: 108px;
+    }
+    .contact-us__img {
+        width: 100%;
+        max-width: 312px;
+    }
     
 }
 
@@ -540,7 +609,23 @@ height: auto;
     .pricing__card-title {
         line-height: 28px;
     }
-    
+
+    .contact-us__img {
+        width: 100%;
+        max-width: 358px;
+    }
+
+    .contact-us__content {
+        flex-direction: column;
+        gap: 33px;
+    }
+    .contact-us__text-wrapper {
+        text-align: center;
+    }
+
+    .contact-us__btn-wrapper {
+        gap: 0;
+    }
 }
 
 @media only screen and (max-width: 617px) {
@@ -659,6 +744,22 @@ height: auto;
     .skill__card-btn{
         padding: 15px 30px;
         
+    }
+
+    .contact-us__btn-wrapper {
+        flex-direction: column;
+        align-items: center;
+        gap: 30px;
+    }
+
+    .contact-us__input {
+        padding-top: 20px;
+        padding-bottom: 25px;
+        width: 100%;
+    }
+
+    .contact-us__btn {
+        width: 100%;
     }
 }
 
