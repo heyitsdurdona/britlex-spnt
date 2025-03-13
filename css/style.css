@@ -1,32 +1,32 @@
 :root {
-       /* COLORS */
-       --white-color: #fff;
-       --dark-color: #000000;
-       --custom-dark: #263238;
-       --gray-color: #8F95A5;
-       --custom-gray: #F5F5F5;
-       
-       /* FONT SIZE */
-       --font-size-n: 1rem; /* 16px */
-       --font-size-m: 1.25rem; /* 20px */
-       --font-size-l: 1.5rem; /*  24px */
-       --font-size-xl: 1.8rem; /* 30px */
-       --font-size-xxl: 2.25rem; /* 36px  */
-       --font-size-xxxl: 3rem; /* 48px */
-       --font-size-xxxxl: 4rem; /* 64px */
-       
-       /* FONT WEIGHT */
-       --font-weight-normal: 400;
-       --font-weight-medium: 500;
-       --font-weight-semibold: 600;
-       
-       /* BORDER RADIUS */
-       --border-radius-s:  5px;
-       --border-radius-m: 10px;
-       --border-radius-l: 15px;
-   
-       /* SITE MAX WIDTH */
-       --site-max-width: 1340px;
+    /* COLORS */
+    --white-color: #fff;
+    --dark-color: #000000;
+    --custom-dark: #263238;
+    --gray-color: #8F95A5;
+    --custom-gray: #F5F5F5;
+    
+    /* FONT SIZE */
+    --font-size-n: 1rem; /* 16px */
+    --font-size-m: 1.25rem; /* 20px */
+    --font-size-l: 1.5rem; /*  24px */
+    --font-size-xl: 1.8rem; /* 30px */
+    --font-size-xxl: 2.25rem; /* 36px  */
+    --font-size-xxxl: 3rem; /* 48px */
+    --font-size-xxxxl: 4rem; /* 64px */
+    
+    /* FONT WEIGHT */
+    --font-weight-normal: 400;
+    --font-weight-medium: 500;
+    --font-weight-semibold: 600;
+    
+    /* BORDER RADIUS */
+    --border-radius-s:  5px;
+    --border-radius-m: 10px;
+    --border-radius-l: 15px;
+    
+    /* SITE MAX WIDTH */
+    --site-max-width: 1340px;
 }
 
 * {
@@ -180,7 +180,7 @@ header {
     display: grid;
     grid-template-columns: auto auto auto;
     grid-template-rows: auto auto;
-
+    
     width: 100%;
     gap: 20px;
     max-width: 1340px;
@@ -194,7 +194,7 @@ header {
     grid-column: span 2;
     display: flex;
     flex-direction: row-reverse;
-
+    
 }
 
 .skill__card-content-wrapper{
@@ -205,7 +205,7 @@ header {
     background-color: var(--custom-gray);
     border-radius: var(--border-radius-m);
     padding: 35px 23px;
-
+    
     /* height: 100%; */
     /* display: flex;
     flex-direction: column;
@@ -237,6 +237,7 @@ header {
     height: auto;
 }
 /* --------------------------- SKILLS END ------------------------- */
+/* --------------------------- ABOUT US START --------------------- */
 .about-us {
     padding-bottom: 188px;
 }
@@ -284,14 +285,67 @@ header {
 }
 
 /* .about-us__img {
-    width: 100%;
-    height: auto;
+width: 100%;
+height: auto;
+} */
+/* --------------------------- ABOUT US END ----------------------- */
+
+/* --------------------------- PRICING START ---------------------- */
+.pricing {
+    padding-bottom: 144px;
+}
+
+.pricing__list {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.pricing__title {
+    font-weight: var(--font-weight-semibold);
+    font-size: var(--font-size-xxxl);
+    line-height: 80px;
+    color: var(--dark-color);
+    text-align: center;
+    margin-bottom: 83px;
+}
+
+.pricing__card-list {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    gap: 52px;
+}
+
+.pricing__card-title {
+    font-weight: var(--font-weight-semibold);
+    font-size: var(--font-size-xl);
+    line-height: 48px;
+    color: var(--custom-dark);
+    margin-bottom: 19px;
+}
+
+.pricing__card-info {
+    font-size: var(--font-size-m);
+    color: var(--gray-color);
+    margin-bottom: 31px;
+}
+
+.pricing__price {
+    background-color: #EEEEEE;
+    padding-right: 27px;
+    padding-left: 12px;
+    padding-top: 7px;
+    padding-bottom: 7px;
+    border-radius: var(--border-radius-s);
+}
+
+/* .pricing__img {
+width: auto;
+height: auto;
 } */
 
-
-/* --------------------------- ABOUT US START --------------------- */
-
-/* --------------------------- ABOUT US END ----------------------- */
+/* -------------------------- PRICING END -------------------------- */
 /* ============================= MAIN END =========================== */
 
 /* ------------------------ MEDIA QUERIES START -------------------- */
@@ -299,55 +353,55 @@ header {
     .hero__btn {
         padding: 30px 10px;
     }
-
+    
     
 }
 
 @media only screen and (max-width: 992px){
     :root {
         /* FONT SIZE */
-       --font-size-n: 0.87rem; /* 16px -> 14px */
-       --font-size-m: 1rem; /* 20px -> 16px */
-       --font-size-l: 1.25rem; /*  24px -> 20px */
-       --font-size-xl: 1.3rem; /* 30px -> 22px */
-       --font-size-xxl: 1.5rem; /* 36px -> 24px  */
-       --font-size-xxxl: 2.25rem; /* 48px -> 36px */
-       --font-size-xxxxl: 3rem; /* 64px -> 48px */
+        --font-size-n: 0.87rem; /* 16px -> 14px */
+        --font-size-m: 1rem; /* 20px -> 16px */
+        --font-size-l: 1.25rem; /*  24px -> 20px */
+        --font-size-xl: 1.3rem; /* 30px -> 22px */
+        --font-size-xxl: 1.5rem; /* 36px -> 24px  */
+        --font-size-xxxl: 2.25rem; /* 48px -> 36px */
+        --font-size-xxxxl: 3rem; /* 64px -> 48px */
     }
-
+    
     /* header responsive*/
     header {
         padding-top: 25px;
         padding-bottom: 68px;
     }
-
+    
     .header__nav {
         max-width: 418px;
     }
-
+    
     .header__btn {
         padding: 12px 40px;
     }
-
+    
     .logo-img {
         width: 89px;
     }
-
+    
     /* hero responsive*/
     .hero__bg-img {
         width: 100%;
         max-width: 460px;
     }
-
+    
     .hero__btn {
         padding: 22px 78px;
     }
-
+    
     .hero__title {
         line-height: 64px;
         margin-bottom: 27px;
     }
-
+    
     .hero__info {
         margin-bottom: 43px;
     }
@@ -355,15 +409,15 @@ header {
     .skills {
         padding-bottom: 106px;
     }
-
+    
     .skills__cards-wrapper{
         max-width: 934px;
     }
-
+    
     .skills__cards-wrapper {
         grid-template-columns: 1fr 1fr;
         grid-template-rows: 1fr 1fr;
-
+        
     }
     .card1 {
         grid-row: span 1;
@@ -386,37 +440,61 @@ header {
     .about-us__img {
         width: 336px;
     }
-
-
+    .about-us {
+        padding-bottom: 101px;
+    }
+    /* pricing responsive1 */
+    /* pricing responsive */
+    .pricing {
+        padding-bottom: 139px;
+    }
+    
+    .pricing__img {
+        width: 80%;
+        height: auto;
+    }
+    
+    .pricing__card-title {
+        line-height: 34px;
+    }
+    
+    
 }
 
 @media only screen and (max-width: 780px) {
     .hero__btn {
         padding: 18px 30px;
     }
+
+    .pricing__price {
+        padding-right: 17px;
+        padding-left: 10px;
+        padding-top: 5px;
+        padding-bottom: 5px;        
+    }
 }
 
 @media only screen and (max-width: 768px){
     :root {
         /* FONT SIZE */
-       --font-size-n: 0.81rem; /* 16px -> 14px -> 13px */
-       --font-size-m: 0.87rem; /* 20px -> 16px -> 14px*/
-       --font-size-l: 1rem; /*  24px -> 20px -> 16px*/
-       --font-size-xl: 1.25rem; /* 30px -> 22px -> 20px */
-       --font-size-xxl: 1.12rem; /* 36px -> 24px -> 18px */
-       --font-size-xxxl: 1.87rem; /* 48px -> 36px -> 30px */
-       --font-size-xxxxl: 2.25rem; /* 64px -> 48px -> 36px */
+        --font-size-n: 0.81rem; /* 16px -> 14px -> 13px */
+        --font-size-m: 0.87rem; /* 20px -> 16px -> 14px*/
+        --font-size-l: 1rem; /*  24px -> 20px -> 16px*/
+        --font-size-xl: 1.25rem; /* 30px -> 22px -> 20px */
+        --font-size-xxl: 1.12rem; /* 36px -> 24px -> 18px */
+        --font-size-xxxl: 1.87rem; /* 48px -> 36px -> 30px */
+        --font-size-xxxxl: 2.25rem; /* 64px -> 48px -> 36px */
     }
     /* header responsive */
     header {
         padding-top: 39px;
         padding-bottom: 40px;
     }
-
+    
     .checkbox-container img {
         display: block;
     }
-
+    
     .header__btn {
         display: none;
     }
@@ -424,26 +502,26 @@ header {
     .header__nav {
         display: none;
     }
-
+    
     /* hero responsive */
     .hero__bg-img {
         width: 100%;
         max-width: 352px;
     }
-
+    
     .hero__btn {
         padding: 19px 67px;
     }
-
+    
     .hero__title {
         line-height: 45px;
         margin-bottom: 25px;
     }
-
+    
     .hero__info {
         margin-bottom: 32px;
     }
-
+    
     .skills {
         padding-bottom: 52px;
     }
@@ -451,70 +529,96 @@ header {
     .about-us__img {
         width: 295px;
     }
-
+    .about-us {
+        padding-bottom: 93px;
+    }
+    /* pricing responsive */
+    .pricing {
+        padding-bottom: 72px;
+    }
+    
+    .pricing__card-title {
+        line-height: 28px;
+    }
+    
 }
 
 @media only screen and (max-width: 617px) {
     .hero__btn {
         padding: 15px 30px;
     }
-
+    
     .about-us__content {
         flex-direction: column-reverse;
     }
-
+    
     .about-us__text-wrapper {
         text-align: center;
     }
-
+    
     .about-us__statistics {
         justify-content: space-around;
     }
+    .pricing__card-list {
+        flex-direction: column;
+        align-items: center;
+    }
+    .pricing__img {
+        text-align: center;
+    }
+
+    .pricing__list {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    
 }
 
 @media only screen and (max-width: 576px){
     :root {
         /* FONT SIZE */
-       --font-size-n: 0.75rem; /* 16px -> 14px -> 13px -> 12px */
-       --font-size-m: 0.87rem; /* 20px -> 16px -> 14px*/
-       --font-size-l: 0.87rem; /*  24px -> 20px -> 16px -> 14px*/
-       --font-size-xl: 1.12rem; /* 30px -> 22px -> 20px -> 18px */
-       --font-size-xxl: 1.12rem; /* 36px -> 24px -> 18px */
-       --font-size-xxxl: 1.87rem; /* 48px -> 36px -> 30px */
-       --font-size-xxxxl: 2.12rem; /* 64px -> 48px -> 36px -> 34px*/
+        --font-size-n: 0.75rem; /* 16px -> 14px -> 13px -> 12px */
+        --font-size-m: 0.87rem; /* 20px -> 16px -> 14px*/
+        --font-size-l: 0.87rem; /*  24px -> 20px -> 16px -> 14px*/
+        --font-size-xl: 1.12rem; /* 30px -> 22px -> 20px -> 18px */
+        --font-size-xxl: 1.12rem; /* 36px -> 24px -> 18px */
+        --font-size-xxxl: 1.87rem; /* 48px -> 36px -> 30px */
+        --font-size-xxxxl: 2.12rem; /* 64px -> 48px -> 36px -> 34px*/
     }
-
+    
     /* header responsive */
     header {
         padding-bottom: 10px;
     }
-
+    
     #checkboxImage {
         width: 42px;
     }
-
+    
     /* hero responsive */
     .hero__bg-img {
         width: 100%;
         max-width: 424px;
     }
-
+    
     .hero__img-lighting{
         display: none;
     }
-
+    
     .hero__content {
         flex-direction: column-reverse;
     }
-
+    
     .hero__left-wrapper {
         text-align: center;
     }
-
+    
     .hero__btn {
         padding: 24px 102px;
     }
-
+    
     .hero__info {
         margin-bottom: 36px;
     }
@@ -522,7 +626,7 @@ header {
     .skills {
         padding-bottom: 83px;
     }
-
+    
     .skills__cards-wrapper{
         max-width: 698px;
     }
@@ -530,12 +634,20 @@ header {
         grid-template-columns: 1fr;
         grid-template-rows: 1fr;
         text-align: center;
-    
+        
     }
-
+    
     .skill__card-img{
         margin: 0 auto;
     }
+    .about-us {
+        padding-bottom: 24px;
+    }
+    /* pricing responsive */
+    .pricing {
+        padding-bottom: 162px;
+    }
+    
 }
 
 @media only screen and (max-width: 453px){
@@ -543,10 +655,10 @@ header {
         width: 100%;
         max-width: 400px;
     }
-
+    
     .skill__card-btn{
         padding: 15px 30px;
-
+        
     }
 }
 
@@ -554,14 +666,14 @@ header {
     .skills {
         padding-bottom: 50px;
     }
-
+    
     .hero__btn {
         padding: 15px 30px;
     }
-
+    
     .about-us__statistics {
         flex-direction: column;
     }
-
+    
 }
 /* ------------------------ MEDIA QUERIES END ---------------------- */
