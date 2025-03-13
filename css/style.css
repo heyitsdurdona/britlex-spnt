@@ -405,6 +405,20 @@ height: auto;
 
 /* ---------------------------- CONTACT US END ---------------------- */
 
+/* ----------------------------- FOOTER START ----------------------- */
+.footer__content {
+    padding-top: 31px;
+    padding-bottom: 64px;
+    border-top: 1px solid var(--dark-color);
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-info {
+    font-size: var(--font-size-m);
+    color: var(--gray-color);
+}
+/* ----------------------------- FOOTER END ------------------------- */
 /* ============================= MAIN END =========================== */
 
 /* ------------------------ MEDIA QUERIES START -------------------- */
@@ -732,6 +746,10 @@ height: auto;
     .pricing {
         padding-bottom: 162px;
     }
+
+    .footer-img {
+        max-width: 79px;
+    }
     
 }
 
@@ -760,6 +778,14 @@ height: auto;
 
     .contact-us__btn {
         width: 100%;
+    }
+    .footer__content {
+        flex-direction: column;
+        align-items:center;
+        gap: 15px;
+    }
+    .footer-info {
+        text-align: center;
     }
 }
 
