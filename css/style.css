@@ -82,10 +82,16 @@ header {
     justify-content: space-between;
 }
 
+.header__item:hover{
+    outline: 3px dashed var(--dark-color);
+}
+
 .header__item-link {
+    padding: 5px;
     font-weight: var(--font-weight-medium);
     font-size: var(--font-size-m);
     color: var(--custom-dark);
+    transition: all ease 0.3s;
 }
 
 .header__btn {
@@ -94,6 +100,12 @@ header {
     border-radius: var(--border-radius-s);
     color: var(--dark-color);
     font-size: var(--font-size-l);
+    transition: all ease 0.3s;
+}
+
+.header__btn:hover {
+    background-color: var(--dark-color);
+    color: var(--white-color);
 }
 
 #navCheckbox {
@@ -161,7 +173,15 @@ header {
     font-size: var(--font-size-xxl);
     background-color: var(--custom-dark);
     border-radius: var(--border-radius-l);
+    transition: all ease 0.3s;
 }
+.hero__btn:hover {
+    background-color: var(--white-color);
+    color: var(--dark-color);
+    border: 3px solid var(--dark-color);
+
+}
+
 /* --------------------------- HEOR END --------------------------- */
 
 /* --------------------------- SKILLS START ---------------------- */
@@ -212,6 +232,11 @@ header {
     justify-content: space-between; */
 }
 
+.skill__card:hover {
+    transform: scale(1.08);
+    transition: all ease 0.3s;
+}
+
 .skill__card-title {
     font-size: var(--font-size-xl);
     font-weight: var(--font-weight-semibold);
@@ -231,7 +256,15 @@ header {
     background-color: var(--custom-dark);
     border-radius: var(--border-radius-s);
     color: var(--white-color);
+    transition: all ease 0.3s;
 }
+
+.skill__card-btn:hover {
+    background-color: var(--white-color);
+    color: var(--dark-color);
+    border: 1px solid var(--dark-color);
+}
+
 .hero__bg-img, .skill__card-img {
     width: 100%;
     height: auto;
@@ -400,6 +433,13 @@ height: auto;
     color: var(--white-color);
     outline: none;
     border-radius: var(--border-radius-m);
+    transition: all easy 0.3s;
+}
+
+.contact-us__btn:hover {
+    background-color: var(--white-color);
+    color: var(--dark-color);
+    border: 1px solid var(--dark-color);
 }
 
 
