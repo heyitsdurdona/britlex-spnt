@@ -4,6 +4,7 @@
        --dark-color: #000000;
        --custom-dark: #263238;
        --gray-color: #8F95A5;
+       --custom-gray: #F5F5F5;
        
        /* FONT SIZE */
        --font-size-n: 1rem; /* 16px */
@@ -162,6 +163,81 @@ header {
     border-radius: var(--border-radius-l);
 }
 /* --------------------------- HEOR END --------------------------- */
+
+/* --------------------------- SKILLS START ---------------------- */
+.skills {
+    padding-bottom: 252px;
+}
+
+.skills__title {
+    font-weight: var(--font-weight-semibold);
+    font-size: var(--font-size-xxxl);
+    text-align: center;
+    margin-bottom: 96px;
+}
+
+.skills__cards-wrapper {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-template-rows: auto auto;
+
+    width: 100%;
+    gap: 20px;
+    max-width: 1340px;
+}
+
+.card1 {
+    grid-row: span 2;
+}
+
+.card4 {
+    grid-column: span 2;
+    display: flex;
+    flex-direction: row-reverse;
+
+}
+
+.skill__card-content-wrapper{
+    padding-bottom: 44px;
+}
+
+.skill__card {
+    background-color: var(--custom-gray);
+    border-radius: var(--border-radius-m);
+    padding: 35px 23px;
+
+    /* height: 100%; */
+    /* display: flex;
+    flex-direction: column;
+    justify-content: space-between; */
+}
+
+.skill__card-title {
+    font-size: var(--font-size-xl);
+    font-weight: var(--font-weight-semibold);
+    line-height: 80px;
+    color: var(--custom-dark);
+    margin-bottom: 5px;
+}
+
+.skill__card-info {
+    font-size: var(--font-size-n);
+    color: var(--gray-color);
+    margin-bottom: 53px;
+}
+
+.skill__card-btn {
+    padding: 17px 63px;
+    background-color: var(--custom-dark);
+    border-radius: var(--border-radius-s);
+    color: var(--white-color);
+}
+.hero__bg-img, .skill__card-img {
+    width: 100%;
+    height: auto;
+}
+
+/* --------------------------- SKILLS END ------------------------- */
 /* ============================= MAIN END =========================== */
 
 /* ------------------------ MEDIA QUERIES START -------------------- */
@@ -221,6 +297,34 @@ header {
     .hero__info {
         margin-bottom: 43px;
     }
+    /* skills responsive */
+    .skills__cards-wrapper{
+        max-width: 934px;
+    }
+
+    .skills__cards-wrapper {
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+
+    }
+    .card1 {
+        grid-row: span 1;
+        grid-column: span 1;
+    }
+    .card2 {
+        grid-row: span 1;
+        grid-column: span 1;
+    }
+    .card3 {
+        grid-row: span 1;
+        grid-column: span 1;
+    }
+    .card4 {
+        grid-row: span 1;
+        grid-column: span 1;
+        flex-direction: column;
+    }
+
 
 }
 
@@ -277,6 +381,7 @@ header {
     .hero__info {
         margin-bottom: 32px;
     }
+    
 
 }
 
@@ -332,11 +437,38 @@ header {
     .hero__info {
         margin-bottom: 36px;
     }
+    /* skills responsive */
+    .skills__cards-wrapper{
+        max-width: 698px;
+    }
+    .skills__cards-wrapper {
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr;
+        text-align: center;
+    
+    }
+
+    .skill__card-img{
+        margin: 0 auto;
+    }
+}
+
+@media only screen and (max-width: 453px){
+    .skill__card {
+        width: 100%;
+        max-width: 400px;
+    }
+
+    .skill__card-btn{
+        padding: 15px 30px;
+
+    }
 }
 
 @media only screen and (max-width: 335px){
     .hero__btn {
         padding: 15px 30px;
     }
+
 }
 /* ------------------------ MEDIA QUERIES END ---------------------- */
